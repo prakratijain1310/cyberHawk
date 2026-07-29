@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CyberWatch - Cybersecurity Monitoring Web App
 
 A simple cybersecurity monitoring web application built with Flask and MongoDB. Displays dummy cybersecurity alerts with dashboard stats, alert management, and search.
@@ -64,3 +65,6 @@ http://localhost:5000
 - `GET /api/dashboard/stats` — dashboard stats
 
 No authentication, Docker, testing, or deployment setup included — kept intentionally minimal.
+=======
+# cyberHawk
+>>>>>>> 3565f9296204e2153b1f5e100cbcbc26822c98fb
