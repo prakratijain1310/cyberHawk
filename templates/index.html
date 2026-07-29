@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberWatch - Security Monitoring Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">🛡️ CyberWatch
+    <span>Security Monitoring</span>
+  </div>
+  <a class="nav-link" data-page="dashboard">📊 Dashboard</a>
+  <a class="nav-link" data-page="alerts">🚨 Alert List</a>
+  <a class="nav-link" data-page="search">🔎 Search Alerts</a>
+</div>
+
+<div class="main">
+  <div id="app"></div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent"></div>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
