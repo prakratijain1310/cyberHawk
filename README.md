@@ -1,22 +1,23 @@
-<<<<<<< HEAD
-# CyberWatch - Cybersecurity Monitoring Web App
+# CyberHawk - Cybersecurity Monitoring Web App
 
-A simple cybersecurity monitoring web application built with Flask and MongoDB. Displays dummy cybersecurity alerts with dashboard stats, alert management, and search.
+CyberHawk is a lightweight cyber threat monitoring platform built for Smart India Hackathon 2024. It provides a centralized dashboard to view, search, and manage cybersecurity alerts. The project demonstrates REST API development, MongoDB integration, and a clean web interface for handling threat data.
 
 ## Tech Stack
 - **Backend:** Flask, Python, MongoDB (PyMongo)
-- **Frontend:** HTML, CSS, Vanilla JS (single-page app style)
+- **Frontend:** HTML, CSS, Vanilla JavaScript
 
 ## Features
-- Dashboard with alert stats (by severity & status)
-- Alert List (view all alerts)
-- Alert Details (view full alert info)
-- Search Alerts (by title, type, severity, IP)
-- Add Alert
-- Delete Alert
+- Dashboard with alert statistics
+- View all cybersecurity alerts
+- Alert details page
+- Search alerts
+- Add new alerts
+- Delete alerts
+- REST API-based backend
 
 ## Project Structure
-```
+
+```text
 cybersec-monitor/
 ├── app.py
 ├── seed_data.py
@@ -32,39 +33,59 @@ cybersec-monitor/
 
 1. Make sure MongoDB is running locally on `mongodb://localhost:27017`.
 
-2. Create a virtual environment and install dependencies:
+2. Create a virtual environment and install dependencies.
+
 ```bash
 python -m venv venv
-venv\Scripts\activate        # Windows
-source venv/bin/activate     # Mac/Linux
+
+# Windows
+venv\Scripts\activate
+
+# Mac/Linux
+source venv/bin/activate
 
 pip install -r requirements.txt
 ```
 
-3. Seed dummy alert data:
+3. Seed dummy alert data.
+
 ```bash
 python seed_data.py
 ```
 
-4. Run the app:
+4. Run the application.
+
 ```bash
 python app.py
 ```
 
-5. Open in browser:
+5. Open your browser and visit:
+
 ```
 http://localhost:5000
 ```
 
 ## API Endpoints
-- `GET /api/alerts` — list all alerts
-- `GET /api/alerts/search?q=` — search alerts
-- `GET /api/alerts/<id>` — get alert details
-- `POST /api/alerts` — create new alert
-- `DELETE /api/alerts/<id>` — delete alert
-- `GET /api/dashboard/stats` — dashboard stats
 
-No authentication, Docker, testing, or deployment setup included — kept intentionally minimal.
-=======
-# cyberHawk
->>>>>>> 3565f9296204e2153b1f5e100cbcbc26822c98fb
+- `GET /api/alerts`
+- `GET /api/alerts/search?q=`
+- `GET /api/alerts/<id>`
+- `POST /api/alerts`
+- `DELETE /api/alerts/<id>`
+- `GET /api/dashboard/stats`
+
+## Screenshots
+
+### Dashboard
+
+![Dashboard](assets/ss1.png)
+
+### Alerts
+
+![Alerts](assets/ss2.png)
+
+![Alert Details](assets/ss3.png)
+
+### Search
+
+![Search](assets/ss4.png)
